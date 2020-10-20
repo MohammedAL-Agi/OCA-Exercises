@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28ba51c32c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Create an Account</h1>
+        <br>
+        <hr>
+        <div class="form">
+
+            <form>
+                <i class="fas fa-user user"></i>
+                <input type="text" placeholder="Name" required>
+                <br>
+                <i class="fas fa-phone-alt phone"></i>
+                <input type="text" placeholder="Phone Number" pattern="^(\d{3})\-(\d{3})\-(\d{4})$"
+                    title="must be a valid Jordanian number EX:077-070-7070" required>
+                <br>
+                <i class="fas fa-envelope email"></i>
+                <input type="text" placeholder="Email" pattern="([a-z\d\.-]+@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?"
+                    title="you know what's required" required>
+                <br>
+                <i class="fas fa-lock pass"></i>
+                <input type="text" placeholder="Password"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!?@#$%^&*])[a-zA-Z\d!?@#$%^&*]{8,}"
+                    title="Password must be at least 8 character it must contain at least one of above (capital latter, small latter, symbols, numbers)"
+                    required hidden>
+            </form>
+            <button id="btn" type="submit" onclick="validate()">Create Account</button>
+            <input type="checkbox" id="chk">
+            <p>I agree to the <a href="#" class="link">Terms and Conditions</a> and <a href="#" class="link">Privacy
+                    Policy</a></p>
+        </div>
+
+    </div>
+
+    <script>
+        function validate() {
+            var valid = false;
+            if (document.getElementById("chk").checked)
+                valid = true;
+        }
+    </script>
+
+
+</body>
+
+</html>

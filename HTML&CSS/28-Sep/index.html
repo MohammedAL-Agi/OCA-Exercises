@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table,th,td 
+ {
+   border:3px solid red;
+ }
+</style>
+  <title>Table</title>
+</head>
+
+<body bgcolor="yellow">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Tel</th>
+      </tr>
+      
+    </thead>
+    <tr>
+      <td>01</td>
+      <td rowspan="3">mohammed</td>
+      <td>alagi</td>
+      <td>mdkk@gmail.com</td>
+      <td rowspan="2">002514441</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td colspan="2">ahmed khaled</td>
+      <td>mdsff@gmail.com</td>
+      <td>002563974</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td colspan="2"  rowspan="2">salem alhagri</td>
+      <td>mvdk@gmail.com</td>
+      <td>006459182</td>
+    </tr>
+    <tr> 
+      <td>04</td>
+      <td>saleh</td>
+      <td>ali</td>
+      <td>plokij@gmail.com</td>
+      <td>001425879</td>
+    </tr> 
+    </table>
+<hr>  
+  
+<h1 align="center"> Rigster form</h1>
+<hr>
+ <form>
+  <p>
+    username:<input type="text" name="first"/> 
+   
+  </p>
+
+  <p>
+    password:<input type="password" name="password"/>
+  </p>
+  <p>
+         email: <input type="email" name="email" id="email">
+  </p>
+<p>
+   Tel:  <input type="number" name="phone" id="">
+</p>
+<p>
+  Date:<input type="date" name="Date" id="">
+</p>
+
+  <p> gender:</p>  
+   <input type="radio" name="gender" value="male">Male 
+   <input type="radio" name="gender" value="female">Female <br>
+
+  <br>
+    
+    <label for="">chose your favorite:</label>
+    <select name="prefer" id="">
+     <option value="1">select</option>
+     <option value="2">sunrise</option>
+     <option value="3">sundset</option>
+    </select>
+ <br>
+  <br>
+   <label for="">where do you prefer to work?</label> <br>
+    
+     <input type="checkbox" name="yes" id="">on line 
+     <input type="checkbox" name="no" id="">in side
+     
+
+    <br>
+
+  <p>Tell me about your self:</p>
+  
+   <textarea name="message" id="feedback" cols="50" rows="10"></textarea> <br>
+  
+   
+   <input type="button" value="Add"> <br>
+    <br>
+   <input type="submit" value="submit">  <input type="reset" value="clear"> <br>
+   
+   </select>
+ </form>
+ <hr>
+<br>  
+ 
+
+
+</body>
+
+</html>

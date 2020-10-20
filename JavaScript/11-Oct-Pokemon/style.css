@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(pika.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Mystery Quest;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about {
+    display: grid;
+    grid-gap: 2em;
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-family: Ubuntu;
+}
+
+h2 {
+    color: #D9580C;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.cute {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+
+.bat {
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+}
+
+.thor {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 30rem;
+    left: 20px;
+}
+
+.ball {
+    position: absolute;
+    left: 50rem;
+}
+
+.go {
+    position: absolute;
+    left: 45rem;
+
+}
+
+@media only screen and (max-width:550px) {}
