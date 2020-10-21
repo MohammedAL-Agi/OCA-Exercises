@@ -18,6 +18,14 @@
                 this.Greeting();
             }
 
+            summation() {
+                let bonusMark = 25;
+                let mark = 65;
+                let finalMark = mark + bonusMark;
+                console.log("the final mark is : " + finalMark);
+            }
+
+
             Greeting() {
                 console.log("welcome" + " " + this.name);
             }
@@ -77,7 +85,9 @@
 
         let ali = new person(02, 'Ali', 15);
 
-        let Sobhi = new Teacher(03, 'Sobhi', 20);
+        let student = new person(03, 'Ahmed', 17, );
+
+        let Sobhi = new Teacher(04, 'Sobhi', 20);
 
         let Nissan = new Car(11, 'luxury', 2020);
 
@@ -86,8 +96,10 @@
         let shark = new Animal(55, 'shark', "false");
 
         let cat = new Animal(4, 'mercuri', "true");
+
         mohammed.About();
         ali.About();
+        student.summation();
         Nissan.start();
         shark.homeAnimal();
         const printObject = (obName) => console.log(obName);
@@ -95,6 +107,7 @@
         printObject(mohammed);
         printObject(Sobhi);
         printObject(Ferrari);
+        printObject(student);
     </script>
 </body>
 
