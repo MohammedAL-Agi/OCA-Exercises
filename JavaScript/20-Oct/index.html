@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class person {
+
+            constructor(id, name, age) {
+                this.id = id;
+                this.name = name;
+                this.age = age;
+                this.Greeting();
+            }
+
+            Greeting() {
+                console.log("welcome" + " " + this.name);
+            }
+            About() {
+                console.log(this.id + " " + this.name + " " + this.age);
+            }
+
+        }
+
+
+        class Teacher extends person {
+            constructor(id, name, age, salary) {
+                super(id, name, age);
+                this.Salary = salary;
+            }
+
+            //Encapsulation
+            set salary(num) {
+                this.salary = num;
+            }
+            get salary() {
+                return this.salary;
+            }
+            Greeting() {
+                console.log("welcome" + " " + this.name);
+            }
+
+        }
+
+        class Car {
+            constructor(id, type, year) {
+                this.id = id;
+                this.type = type;
+                this.year = year;
+            }
+
+            start() {
+                console.log("The car is running");
+            }
+        }
+
+        class Animal {
+            constructor(id, name, isPet) {
+                this.id = id;
+                this.name = name;
+                this.isPet = isPet;
+            }
+            homeAnimal() {
+                if (this.isPet !== false);
+                return true;
+            }
+
+        }
+
+
+        let mohammed = new person(01, 'Mohammed', 18);
+
+        let ali = new person(02, 'Ali', 15);
+
+        let Sobhi = new Teacher(03, 'Sobhi', 20);
+
+        let Nissan = new Car(11, 'luxury', 2020);
+
+        let Ferrari = new Car(69, 'sport', 2019);
+
+        let shark = new Animal(55, 'shark', "false");
+
+        let cat = new Animal(4, 'mercuri', "true");
+        mohammed.About();
+        ali.About();
+        Nissan.start();
+        shark.homeAnimal();
+        const printObject = (obName) => console.log(obName);
+        printObject(ali);
+        printObject(mohammed);
+        printObject(Sobhi);
+        printObject(Ferrari);
+    </script>
+</body>
+
+</html>
