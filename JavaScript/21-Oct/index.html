@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #000000;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .btnCon {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .session {
+            border-radius: 5px;
+            padding: 5px 15px;
+            background-color: #6a097d;
+        }
+
+        .local {
+            border-radius: 5px;
+            padding: 5px 20px;
+            background-color: #6a097d;
+        }
+
+        .clear {
+            border-radius: 5px;
+            padding: 5px 20px;
+            background-color: #6a097d;
+        }
+
+        label {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form name="form1" action="#">
+            <label>Enter a key </label>
+            <input id="key" type="text"> <br> <br>
+            <label>Enter a value</label>
+            <input id="value" type="text"> <br> <br>
+        </form>
+        <div class="btnCon">
+            <button onclick="validate('local')" value="local submit" class="local">Local</button>
+            <button onclick="validate('session')" value="session submit" class="session">Session</button>
+            <button onclick="clearData()" value="clear" class="clear">clear</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
